@@ -3,14 +3,14 @@ import Image from "next/image";
 import Avatar from "./Avatar";
 import ChangeUsername from "./ChangeUsername";
 function Header() {
-  const { user, logout } = useMoralis();
+  const { user } = useMoralis();
   return (
     <div className="sticky top-0 z-50 p-5 text-pink-300 bg-black border-b-2 border-pink-700 ">
       <div className="grid items-end grid-cols-5 lg:grid-cols-6 lg:items-center">
         <div className="relative hidden w-24 h-24 mx-auto lg:inline-grid">
           <Image
             objectFit="cover"
-            className="rounded-full "
+            className="rounded-full"
             src="https://github.com/digiangler.png"
             layout="fill"
           ></Image>

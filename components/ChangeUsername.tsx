@@ -1,7 +1,7 @@
 import { useMoralis } from "react-moralis";
 
 function ChangeUsername() {
-  const { setUserData, isUserUpdating, userError, user } = useMoralis();
+  const { setUserData, isUserUpdating, user } = useMoralis();
 
   const setUsername = () => {
     const username = prompt(
@@ -14,7 +14,7 @@ function ChangeUsername() {
   };
 
   return (
-    <div className="absolute text-sm  top-5 right-5">
+    <div className="absolute text-sm top-5 right-5">
       <button
         disabled={isUserUpdating}
         onClick={setUsername}

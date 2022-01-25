@@ -6,7 +6,7 @@ const MINS_DURATION = 15;
 function Messages() {
   const { user } = useMoralis();
   const endOfMessagesRef = useRef(null);
-  const { data, error } = useMoralisQuery(
+  const { data } = useMoralisQuery(
     "Messages",
     (query) =>
       query
